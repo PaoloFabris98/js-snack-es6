@@ -55,7 +55,7 @@ export function isString(word) {
 }
 
 /**
- * Description placeholder
+ * random number generator
  *
  * @export
  * @param {number} min
@@ -68,7 +68,7 @@ export function randomNum(min, max) {
 }
 
 /**
- * Description placeholder
+ * random byke generator
  *
  * @export
  * @param {int} itteration
@@ -85,7 +85,7 @@ export function randomBykeCreator(itteration) {
 }
 
 /**
- * Description placeholder
+ * check weight function
  *
  * @export
  * @param {array} bikeArray
@@ -109,7 +109,7 @@ export function lesserWeightBike(bikeArray, itteration) {
 }
 
 /**
- * Description placeholder
+ * randomize team creator
  *
  * @export
  * @param {int} itteration
@@ -127,7 +127,7 @@ export function randomTeamCreator(itteration) {
 }
 
 /**
- * Description placeholder
+ * customized array
  *
  * @export
  * @param {int} itteration
@@ -142,7 +142,7 @@ export function nameFail(itteration, footballTeamArray) {
 }
 
 /**
- * Description placeholder
+ * all number from a to b in an array
  *
  * @export
  * @param {array} arr
