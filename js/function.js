@@ -49,7 +49,7 @@ export function randomTeamCreator(itteration) {
   for (let i = 1; i <= itteration; i++) {
     // Cloniamo l'oggetto `Bike` per evitare di modificare l'oggetto originale
     const team = { ...objFootBall.footballTeam }; // Cloniamo l'oggetto
-    team.name = `Team${i}`; // Assegnamo nome e pesi
+    team.name = `Squadra${i}`; // Assegnamo nome e pesi
     team.pointsMade = randomNum(min, max);
     team.fail = randomNum(min, max);
     console.log(team); // Stampiamo l'oggetto per ogni iterazione

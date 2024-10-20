@@ -1,5 +1,3 @@
-
-import * as objSnack from "./obj/snack.js";
 import * as funct from "./function.js";
 
 const itteration = 5;
