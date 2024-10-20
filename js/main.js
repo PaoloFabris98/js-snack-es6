@@ -1,6 +1,12 @@
-import * as objFunctBike from "./obj/bike.js"
-import * as objFunctFootBall from "./obj/football.js"
-import * as objFunctSnack from "./obj/snack.js"
+
+import * as objFootBall from "./obj/football.js";
+import * as objSnack from "./obj/snack.js";
+import * as funct from "./function.js";
+
+const itteration = 5;
 
 
 
+funct.randomBykeCreator(itteration);
+console.log(funct.bikeArray);
+funct.lesserWeightBike(funct.bikeArray, itteration)
