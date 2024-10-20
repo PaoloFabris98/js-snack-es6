@@ -1,22 +1,78 @@
 import * as objBike from "./obj/bike.js";
 import * as objFootBall from "./obj/football.js";
 
+/**
+ * Description placeholder
+ *
+ * @type {int}
+ */
 const min = 1;
+
+/**
+ * Description placeholder
+ *
+ * @type {int}
+ */
 const max = 20;
+
+/**
+ * Description placeholder
+ *
+ * @type {Array}
+ */
 export let bikeArray = [];
+
+/**
+ * Description placeholder
+ *
+ * @type {Array}
+ */
 export let footballTeamArray = [];
+
+/**
+ * Description placeholder
+ *
+ * @type {Array}
+ */
 export let footballNameFail = [];
+
+/**
+ * Description placeholder
+ *
+ * @type {Array}
+ */
 export let arr = [];
 
+/**
+ * Description placeholder
+ *
+ * @export
+ * @param {*} word
+ * @returns {boolean}
+ */
 export function isString(word) {
   return typeof word === "string";
 }
 
+/**
+ * Description placeholder
+ *
+ * @export
+ * @param {number} min
+ * @param {number} max
+ * @returns {int}
+ */
 export function randomNum(min, max) {
   const temp = Math.floor(Math.random() * (max - min + 1)) + min;
   return temp;
 }
 
+/**
+ * Description placeholder
+ *
+ * @export
+ * @param {int} itteration
+ */
 export function randomBykeCreator(itteration) {
   for (let i = 1; i <= itteration; i++) {
     // Cloniamo l'oggetto `Bike` per evitare di modificare l'oggetto originale
@@ -28,6 +84,13 @@ export function randomBykeCreator(itteration) {
   }
 }
 
+/**
+ * Description placeholder
+ *
+ * @export
+ * @param {array} bikeArray
+ * @param {int} itteration
+ */
 export function lesserWeightBike(bikeArray, itteration) {
   const temp = [];
   temp.push(bikeArray[0]);
@@ -45,6 +108,12 @@ export function lesserWeightBike(bikeArray, itteration) {
   );
 }
 
+/**
+ * Description placeholder
+ *
+ * @export
+ * @param {int} itteration
+ */
 export function randomTeamCreator(itteration) {
   for (let i = 1; i <= itteration; i++) {
     // Cloniamo l'oggetto `Bike` per evitare di modificare l'oggetto originale
@@ -57,6 +126,13 @@ export function randomTeamCreator(itteration) {
   }
 }
 
+/**
+ * Description placeholder
+ *
+ * @export
+ * @param {int} itteration
+ * @param {array} footballTeamArray
+ */
 export function nameFail(itteration, footballTeamArray) {
   for (let i = 0; i < itteration; i++) {
     const temp = "Nome: " + footballTeamArray[i].name + ". Falli: " + footballTeamArray[i].fail;
@@ -65,6 +141,14 @@ export function nameFail(itteration, footballTeamArray) {
   console.log(footballNameFail);
 }
 
+/**
+ * Description placeholder
+ *
+ * @export
+ * @param {array} arr
+ * @param {int} a
+ * @param {int} b
+ */
 export function snack(arr, a, b) {
   console.log(a);
   console.log(b);
