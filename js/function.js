@@ -59,7 +59,8 @@ export function randomTeamCreator(itteration) {
 
 export function nameFail(itteration, footballTeamArray) {
   for (let i = 0; i < itteration; i++) {
-    footballNameFail.push(footballTeamArray[i].name, footballTeamArray[i].fail);
+    const temp = "Nome: " + footballTeamArray[i].name + ". Falli: " + footballTeamArray[i].fail;
+    footballNameFail.push(temp)
   }
   console.log(footballNameFail);
 }
